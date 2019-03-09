@@ -1,0 +1,37 @@
+@import 'extends/_extends_main';
+
+// styles for default <button>
+.main-button {
+    @extend %main-button;
+
+    @include media-breakpoint-from($from-bg) {
+        &:hover {
+            @include opacity(0.6);
+        }
+    }
+}
+
+// styles for default <input>
+.main-input {
+    @extend %main-input;
+
+    &::-webkit-input-placeholder {
+      color: inherit;
+    }
+
+    &::-moz-placeholder {
+      color: inherit;
+    }
+
+    &:-moz-placeholder {
+      color: inherit;
+    }
+
+    &:-ms-input-placeholder {
+      color: inherit;
+    }
+
+    &__textarea {
+        resize: none;
+    }
+}

@@ -1,0 +1,28 @@
+// extends for fixes
+
+%justify-fix {
+    text-justify: distribute;
+    line-height: 0;
+    text-align: justify;
+    font-size: 0;
+
+    &:after {
+        content: '';
+        display: inline-block;
+        width: 100%;
+    }
+}
+
+%clear-fix {
+    &:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+}
+
+%iframe-ios-width-fix {
+    min-width: 100%;
+    width: 1px;
+    *width: 100%; // not valid code
+}

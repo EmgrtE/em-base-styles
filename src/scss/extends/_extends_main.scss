@@ -1,0 +1,25 @@
+// extends for main elements
+
+%main-button {
+    @include transition(opacity .3s);
+    @include appearance(none);
+
+    background: transparent;
+    outline: 0 none;
+    border: 0 none;
+    cursor: pointer;
+}
+
+%main-input {
+    @include background-clip(padding-box);
+    @include border-radius(0);
+    @include appearance(none);
+
+    box-shadow: none;
+    outline: 0 none;
+    border: 0 none;
+
+//    font: {
+//        font-family: $regular;
+//    }
+}

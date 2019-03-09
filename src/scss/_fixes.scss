@@ -1,0 +1,18 @@
+@import 'extends/_extends_fixes';
+
+// fix for ios safari if the iframe needs a width of 100%
+.iframe-ios-width-fix {
+    iframe {
+        @extend %iframe-ios-width-fix;
+    }
+}
+
+// fix for justify elements if the browser don't support flex-box
+.justify-fix {
+    @extend %justify-fix;
+}
+
+// fix for a container if its child has a float property
+.clear-fix {
+    @extend %clear-fix;
+}
